@@ -1,0 +1,33 @@
+<idea-plugin>
+  <id>com.your.company.unique.plugin.id</id>
+  <name>Corona</name>
+  <version>1.0</version>
+  <vendor email="support2@yourcompany.com" url="http://www.2yourcompany.com">YourCompan2y</vendor>
+
+  <description> description description description description </description>
+
+  <change-notes>
+    change noes change noeschange noeschange noeschange noeschange noeschange noes
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="PopupDialogAction" class="PopupDialogAction" text="Popup Dialog Action">
+      <keyboard-shortcut first-keystroke="control alt A" second-keystroke="C" keymap="$default"/>
+      <mouse-shortcut keystroke="control button3 doubleClick" keymap="$default"/>
+      <add-to-group group-id="ToolsMenu" anchor="first"/>
+    </action>
+  </actions>
+
+</idea-plugin>
