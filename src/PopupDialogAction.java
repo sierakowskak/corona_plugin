@@ -10,7 +10,8 @@ public class PopupDialogAction extends AnAction {
 
     @Override
     public void actionPerformed(@NotNull AnActionEvent anActionEvent ) {
-        String coronaData = "tralala";
+        Corona corona = new Corona();
+        String coronaData = corona.fajnaMetoda();
         Project currentProject = anActionEvent.getProject();
         Messages.showMessageDialog(currentProject, coronaData, "Ile już jest corony?", Messages.getInformationIcon());
     }
